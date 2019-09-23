@@ -1,0 +1,35 @@
+body 
+{
+    background-image: url(iron.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2{
+    color:whitesmoke;
+}
+p{
+    background-color: #e6e6e6;
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+p.bottom{
+    background-color: grey;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+}
+
+a
+{
+    background-color: white;
+    color: red;
+}
+
+a:hover
+{
+    background-color:white;
+    color: blue;
+}
