@@ -1,32 +1,23 @@
-var bo, bk, f;
 
 
-function onload(){
-    bo = document.getElementById("bo");
-    bk = document.getElementById("bk");
-    f = document.getElementById("texts");
-}
-function borderChange(){
-    if(bo.value == "red"){
-        f.style.border = "thick solid red";
-    }
-    else if(bo.value == "blue"){
-        f.style.border = "thick solid blue";
-    }
-    else if(bo.value == "green"){
-        f.style.border = "thick solid green";
-    }
+
+function rgb(r, g, b){
+    return "rgb("+r+","+g+","+b+")";
+  }
+
+
+function styleChange(){
     
-}
+    let  bred = document.getElementById("bor").value;
+    let bgreen = document.getElementById("bog").value;
+   let  bblue = document.getElementById("bob").value;
+    let kred = document.getElementById("bkr").value;
+   let  kgreen = document.getElementById("bkg").value;
+   let  kblue = document.getElementById("bkb").value;
+   let  width = document.getElementById("wid").value;
+   let  f = document.getElementById("texts");
+    f.style.borderColor = rgb(bred, bgreen, bblue);
+    f.style.borderWidth = width + "px";
+    f.style.backgroundColor = rgb(kred, kgreen, kblue);
 
-function backgroundChange(){
-    if(bk.value == "red"){
-        f.style.backgroundColor = "red";
-    }
-    else if(bk.value == "blue"){
-        f.style.backgroundColor = "blue";
-    }
-    else if(bk.value == "green"){
-        f.style.backgroundColor = "green";
-    }
 }

@@ -4,17 +4,31 @@
         <title>CSS Manipulation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="manipulation.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body onload="onload()">
+    <script type="text/javascript" src="manipulation.js"></script>
+    <body>
         
         <p id="texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo maiores odit temporibus sunt, obcaecati, aliquam magni fugiat culpa corporis minus, libero ut laudantium eos! Suscipit saepe iure quidem optio!</p>
-        <form action="">
-            Change border color: <br>
-            <input type="text" id="bo"><br>
-            <input type="submit" onclick="borderChange()"value=""><br>
-            Change background color: <br>
-            <input type="text" id="bk"> <br>
-            <input type="submit" onclick="backgroundChange()" value="">
-        </form>
+        
+        <h2><strong>Change border color:</strong></h2> <br>
+        Red value (0-255): 
+        <input type="text" id="bor"><br>
+        Green value (0-255): 
+        <input type="text" id="bog"><br>
+        Blue value (0-255): 
+        <input type="text" id="bob"><br>
+        Width: 
+        <input type="text" id="wid"><br>
+        <br>
+        <h2><strong>Change background color:</strong> </h2><br>
+        Red value (0-255): 
+        <input type="text" id="bkr"><br>
+        Green value (0-255): 
+        <input type="text" id="bkg"><br>
+        Blue value (0-255): 
+        <input type="text" id="bkb"><br>
+        <button onclick= "styleChange()">Submit</button>
+
     </body>
 </html>
